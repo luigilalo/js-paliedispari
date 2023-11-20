@@ -29,3 +29,36 @@ function createRandomNumber(min, max){
     return newRandomNum
 }
 
+let randomNumber = createRandomNumber (1, 5);
+console.log(`numero scelto dal computer:${randomNumber}`);
+
+/* Sommiamo stabilendo se la somma dei due numeri è pari o dispari (usando una funzione) */
+
+function sumElements(element1, element2){
+    let sum = element1 + element2;
+    if (sum % 2 === 0) {
+        sum = "pari";
+    }
+    else{
+        sum = "dispari";
+    }
+    return sum;
+}
+/* Dichiariamo chi ha vinto. */
+
+let oddEven = sumElements (userNumber, randomNumber);
+console.log(`risultato somma = ${oddEven}`); 
+
+
+
+if (oddEven === oddOrEven.toLowerCase()) {
+    let result = "Hai vinto!";
+    console.log(result)
+    alert(result);
+}
+else {
+    let result = "Hai perso!";
+    console.log(result)
+    alert(result)
+
+}
